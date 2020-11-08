@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dogs!</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <h1>Who Let The Dogs Out?!</h1>
+        <!-- Random Dogs Section -->
+        <section>
+            <h3>Enter the number of dogs you want to let out,<br>
+            as many as you want between 1 and 50!</h3>
+            <form id="random-dogs">
+                <label for="number-of-dogs"><input id="number-of-dogs" type="number" value=3 min=1 max=50 required /></label>
+                <button type="submit">Let them out!</button>
+            </form>
+        </section>
+
+        <!-- Dog Breed Section -->
+        <section>
+            <h3>OR be a snob and just pick your favorite breed.</h3>
+            <form id="dog-breeds">
+                <label for="dog-breed"><input id="dog-breed" type="text" required /></label>
+                <button type="submit">Here doggo!</button>
+            </form>
+        </section>
+        
+        <section class="results hidden">
+            <div class="results-msg"></div>
+            <div class="results-img"></div>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="index.js"></script>
+    
+</body>
+</html>
